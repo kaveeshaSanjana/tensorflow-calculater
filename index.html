@@ -1,68 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
+
+<body class="body">
 
 
-<div>
+
+    <div>
         <h1 id="values"></h1>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <div><h1 id="h1">Teachable Machine Image Model</h1></div>
-            <button type="button" onclick="init()">Start</button>
-            <div id="webcam-container"></div>
-            <div id="label-container"></div>
-        </div>
-
-
-        <div class="col text-center">
-            <input class="mt-10" type="text"><br>
-            <button class="calBtn btn m-1" type="button">1</button>
-            <button class="calBtn btn m-1" type="button">2</button>
-            <button class="calBtn btn m-1" type="button">1</button>
-            <button class="calBtn btn m-1" type="button">+</button>
-            <br>
-            <button class="calBtn btn m-1" type="button">2</button>
-            <button class="calBtn btn m-1" type="button">2</button>
-            <button class="calBtn btn m-1"  type="button">2</button>
-            <button class="calBtn btn m-1"  type="button">2</button>
-            <br>
-            <button class="calBtn btn m-1"  type="button">2</button>
-            <button class="calBtn btn m-1"  type="button">2</button>
-            <button class="calBtn btn m-1"  type="button">2</button>
-            <button class="calBtn btn m-1"  type="button">2</button>
-            <br>
-            <button class="calBtn btn m-1"  type="button">2</button>
-            <button class="calBtn btn m-1"  type="button">2</button>
-            <button class="calBtn btn m-1"  type="button">2</button>
-            <button class="calBtn btn m-1"  type="button">2</button>
-        </div>
-
-
-
     </div>
-    <div class="row">
-      
+
+    <div class="container">
+        <div class="row ">
+            <div class="alert alert-success" role="alert">You are able to use Roman numerals, Hindu-Arabic numerals, and your hand to show numbers for detection</div>                      
+
+            <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <div class="main_webcam_container">
+                    <div id="webcam-container" class="webcam-container"></div>
+                    <div class="progress">
+                        <div class="progress__fullfill">
+                            <span class="progress__text">00%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col text-center col-md-12 col-sm-12 col-lg-6 col-xs-12 calculator">
+
+                <input id="inputBar" class="inputBar" type="text"><br>
+
+                <button class="calBtn " type="button">7</button>
+                <button class="calBtn " type="button">8</button>
+                <button class="calBtn " type="button">9</button>
+                <button class="calBtn " type="button">/</button>
+                <br>
+                <button class="calBtn " type="button">4</button>
+                <button class="calBtn " type="button">5</button>
+                <button class="calBtn " type="button">6</button>
+                <button class="calBtn " type="button">-</button>
+                <br>
+
+                <button class="calBtn " type="button">1</button>
+                <button class="calBtn " type="button">2</button>
+                <button class="calBtn " type="button">3</button>
+                <button class="calBtn " type="button">+</button>
+                <br>
+                <button class="calBtn " type="button">0</button>
+                <button class="calBtn " type="button">.</button>
+                <button class="calBtn " type="button">*</button>
+                <button class="calBtn " type="button">=</button>
+                <br>
+                <button class="calBtn " type="button">00</button>
+                <button class="ALCalBtn  " type="button">AC</button>
+
+            </div>
+
+
+
+        </div>
+        <div class="row">
+
+        </div>
     </div>
-</div>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/mathjs/lib/browser/math.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
-<script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/mathjs/lib/browser/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
+
 </html>

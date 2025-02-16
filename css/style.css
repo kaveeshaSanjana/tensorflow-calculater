@@ -1,0 +1,130 @@
+*{
+    margin :0%;
+    padding: 0%;
+   
+
+}
+.body{
+    
+    background-image: url("../img/image.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.inputBar{
+    background-color: rgb(104, 219, 160);
+    margin-top: 50px;
+    width: 350px;
+    height: 50px;
+    border-radius:35px ;
+    border: 3px solid white;
+    text-align: right;
+    padding: 25px;  
+    color: white;
+    font-size: x-large;
+}
+
+.calBtn{
+    border: 2px solid  rgb(104, 219, 160);;
+    height: 60px;
+    width: 60px;
+    background-color:white;
+    font-size: medium;
+
+    margin: 10px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.ALCalBtn{
+    border: 2px solid white;
+    height: 60px;
+    width: 250px;
+    background-color: rgb(104, 219, 160);
+    font-size: medium;
+    color: white;
+    margin: 10px;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+@media screen and (max-width : 760px) {
+
+    .calBtn {
+        padding:15px;
+
+    }
+    .ALCalBtn {
+        padding:5px;
+
+    }
+    
+}
+
+@media screen and (max-width : 970px) {
+
+    .calBtn,.ALCalBtn{
+        padding:15px;
+        margin: 5px;
+
+    } 
+}
+
+
+.calculator{
+    margin-left: 100px;
+
+    width: 450px;
+    height: 550px;
+    margin-top: 30px;
+    background: transparent;
+    background-color: rgb(183, 222, 196);
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-bottom: 70px;
+}
+
+.calBtn:hover{
+    background-color: rgb(104, 219, 160);
+    color: white;
+    border-color:white ;
+}
+.ALCalBtn:hover{
+    background-color:white;
+    color: black;
+    border-color: rgb(104, 219, 160); ;
+
+}
+
+.progress{
+    top: 10%;
+    z-index: 2;
+    background-color:  rgb(191, 233, 211);;
+    width: 500px;
+    height:50px;
+    border: 2px;
+    border-radius: 8px ;
+}
+
+.progress__fullfill{
+    background-color:   rgb(104, 219, 160);
+    width: 0%;
+    height:50px;
+
+}
+
+.main_webcam_container{
+    margin-left: 50px;
+    margin-top: 25px;
+    width: 510px;
+    border: 5px solid  rgb(255, 255, 255);;
+    position: relative;
+}
+
+.progress__text{
+    color: white;
+    font-size: xx-large;
+    margin-left: 450px;
+    
+}
